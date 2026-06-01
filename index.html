@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>AgroTech 2030 | ODS + Agronegócio Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero futuristic-bg" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="badge-glow"><i class="fas fa-leaf"></i> Agronegócio & ODS 2030</div>
+            <h1 class="glitch-text">Tecnologia Regenerativa<br><span class="highlight">Transformando o Futuro do Agro</span></h1>
+            <p class="hero-sub">17 Objetivos de Desenvolvimento Sustentável integrados ao campo. Inovação, sustentabilidade e impacto global.</p>
+            <div class="hero-cta">
+                <button class="btn-primary" id="exploreOdsBtn"><i class="fas fa-rocket"></i> Explorar ODS Interativas</button>
+                <button class="btn-secondary" id="darkModeToggle"><i class="fas fa-moon"></i> Modo Noturno</button>
+                <button class="btn-secondary" id="randomOdsBtn"><i class="fas fa-dice-d6"></i> ODS Surpresa</button>
+            </div>
+        </div>
+        <div class="tech-dots"></div>
+        <div class="grid-lines"></div>
+        <div class="floating-particles" id="particles"></div>
+    </header>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-card glass-panel">
+                <div class="intro-icon"><i class="fas fa-seedling"></i><i class="fas fa-microchip"></i><i class="fas fa-chart-line"></i></div>
+                <h2>O Agro como Motor da Sustentabilidade Global</h2>
+                <p>O agronegócio é peça-chave para os <strong>17 ODS da ONU</strong>. Mais do que produzir alimentos, o campo regenera ecossistemas, sequestra carbono, gera energia limpa e promove justiça social. A integração das metas transforma a produção agrícola em um modelo de prosperidade para as próximas gerações.</p>
+                <div class="counter-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="statFood">0</span>
+                        <span class="stat-label">Bilhões alimentados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="statCarbon">0</span>
+                        <span class="stat-label">GT CO₂ sequestrado/ano</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="statJobs">0</span>
+                        <span class="stat-label">Empregos verdes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ods-grid-section" id="odsSection">
+        <div class="container">
+            <div class="section-header">
+                <h2>17 Pilares do Futuro <span class="accent">| ODS & Agro</span></h2>
+                <p>Passe o mouse ou clique nos cards para ver como o agronegócio contribui para cada ODS</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="social">Social</button>
+                    <button class="filter-btn" data-filter="economic">Econômico</button>
+                    <button class="filter-btn" data-filter="environmental">Ambiental</button>
+                </div>
+            </div>
+            <div class="ods-grid" id="odsGridContainer"></div>
+        </div>
+    </section>
+
+    <section class="interactive-section">
+        <div class="container">
+            <div class="dual-panel">
+                <div class="panel-text glass-panel">
+                    <h3><i class="fas fa-chalkboard-user"></i> Por que integrar ODS no Agro?</h3>
+                    <p>Integrar os Objetivos de Desenvolvimento Sustentável ao agronegócio é vital para a competitividade e sobrevivência do setor. Adotar práticas regenerativas garante resiliência climática, acesso a mercados exigentes e estabilidade social. É o caminho para alimentar a população sem esgotar os recursos naturais, consolidando o campo como motor perene de desenvolvimento.</p>
+                    <div class="highlight-quote">“O campo deixa de ser fonte de recursos e torna-se o pilar central da sustentabilidade global.”</div>
+                </div>
+                <div class="panel-text glass-panel">
+                    <h3><i class="fas fa-chart-simple"></i> Impacto em Tempo Real</h3>
+                    <div class="impact-meter">
+                        <div class="meter-label">Progresso Global ODS 2030</div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" id="progressMeter" style="width: 0%"></div>
+                        </div>
+                        <div class="meter-value" id="progressValue">0%</div>
+                    </div>
+                    <button class="btn-outline-info" id="showPartnersBtn"><i class="fas fa-handshake"></i> Parcerias e Inovação</button>
+                    <button class="btn-outline-info" id="quizBtn"><i class="fas fa-brain"></i> Quiz Rápido</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-tractor"></i> Agro 2030 • Sustentabilidade e Inovação
+                </div>
+                <div class="footer-meta">
+                    <p>Conteúdo 100% autoral baseado nos dados das ODS/ONU.Feito pela Aluna: Daniela Martinez 3°F. Design futurista com interatividade avançada.<br> Tecnologias: HTML5, CSS3, JavaScript • Projeto para o Concurso Agrinho </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toastContainer"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
